@@ -7,9 +7,9 @@ function getComputerChoice() {
     return aOutcome;
 }
 
-function playerSelection() {
-    return prompt("Enter rock, paper, or scissors").toLowerCase();
-}
+// function playerSelection() {
+//     return prompt("Enter rock, paper, or scissors").toLowerCase();
+// }
 
 function playRound(computerChoice, playerChoice) {
     if(computerChoice === 'rock' & playerChoice === 'paper') {
@@ -48,14 +48,14 @@ function playRound(computerChoice, playerChoice) {
     
 }
 
-function game() {
-    for(let i = 0; i < 5; i++) {
-        const playerSelect = playerSelection();
-        const computerSelect = getComputerChoice();
-        console.log(playRound(playerSelect, computerSelect));
-        console.log("Player score = " + playerCounter);
-        console.log("Computer score = " + computerCounter);
-    }
-}
+// function game() {
+//     for(let i = 0; i < 5; i++) {
+//         const playerSelect = playerSelection();
+//         const computerSelect = getComputerChoice();
+//         console.log(playRound(playerSelect, computerSelect));
+//         console.log("Player score = " + playerCounter);
+//         console.log("Computer score = " + computerCounter);
+//     }
+// }
 
-game();
+// game();

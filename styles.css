@@ -2,78 +2,90 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.hidden {
+ }
+ 
+ 
+ .hidden {
     display: none;
-}
-.visible {
+ }
+ .visible {
     display: block;
-}
-
-body {
+ }
+ 
+ 
+ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     background: rgb(48, 48, 48);
-}
-
-.mainContainer {
+ }
+ 
+ 
+ .mainContainer {
     display: flex;
     flex-direction: column;
-    gap: 250px;
-}
-
-.header {
+ }
+ 
+ 
+ .header {
     display: flex;
     align-self: center;
     justify-self: center;
-
-}
-
-.header {
+ 
+ 
+ }
+ 
+ 
+ .header {
     font-size: 5rem;
     font-weight: 700;
     color:white;
     outline: black;
-}
-
-.midContainer {
+ }
+ 
+ 
+ .midContainer {
+    padding-top: 200px;
     display: flex;
     flex-grow: 1;
     justify-content: space-evenly;
     align-items: center;
-}
-
-.playerContainer {
+ }
+ 
+ 
+ .playerContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px
-}
-
-.computerContainer {
+ }
+ 
+ 
+ .computerContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-}
-
-p {
+ }
+ 
+ 
+ p {
     font-size: 1.5rem;
     color: white;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     border: 0px;
-}
-
-#btns {
+ }
+ 
+ 
+ #btns {
     display: flex;
     flex-direction: column;
     gap: 60px;
-}
-
-.btn {
+ }
+ 
+ 
+ .btn {
     border: 0px;
     position: relative;
     background: #fff;
@@ -85,54 +97,62 @@ p {
     font-weight: 400;
     padding: 10px 30px;
     transition: 0.5s;
-}
-
-.btn:hover {
+ }
+ 
+ 
+ .btn:hover {
     cursor: pointer;
     background: var(--clr);
     color: var(--clr);
     letter-spacing: 0.25em;
     box-shadow: 0 0 35px var(--clr);
-}
-
-.btn::before {
+ }
+ 
+ 
+ .btn::before {
     content: '';
     position: absolute;
     inset: 3px;
     background: rgb(48, 48, 48);
-}
-
-.btn span {
+ }
+ 
+ 
+ .btn span {
     position: relative;
     z-index: 1;
-}
-
-img {
+ }
+ 
+ 
+ img {
     scale: 0;
     display: block;
     position: absolute;
     width: 150px;
     height: 150px;
-}
-img.active {
+ }
+ img.active {
     scale: 1;
-}
-.images1 {
+ }
+ .images1 {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 150px;
     height: 150px;
-}
-.images2 {
+ }
+ .images2 {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 150px;
     height: 150px;
-}
-
-.footer {
+ }
+ 
+ 
+ .footer {
+    padding-top: 50px;
     display: flex;
-    justify-content: center;
-}
+    flex-direction: column;
+    align-items: center;
+ }
+ 

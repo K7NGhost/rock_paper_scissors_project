@@ -8,21 +8,36 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="midContainer">
-        <div class="images1">
-            <img src="images/rock.png" alt="rock">
-            <img src="images/paper.png" alt="rock">
-            <img src="images/scissors.png" alt="rock">
+    <div class="mainContainer">
+        <div class="header">
+            <header>rock, paper, scissors</header>
         </div>
-        <div id="btns">
-            <button class="btn" style="--clr:#1e9bff"><span>rock</span></button>
-            <button class="btn" style="--clr:#6eff3e"><span>paper</span></button>
-            <button class="btn" style="--clr:#ff1867"><span>scissors</span></button>
+        <div class="midContainer">
+            <div class="playerContainer">
+                <p>Player</p>
+                <div class="images1">
+                    <img id="rockImg" src="images/rock.png" alt="rock">
+                    <img id="paperImg" src="images/paper.png" alt="paper" class="hidden">
+                    <img id="scissorImg" src="images/scissors.png" alt="scissors" class="hidden">
+                </div>
+            </div>
+            <div id="btns">
+                <button id="btnR" class="btn" style="--clr:#1e9bff"><span>rock</span></button>
+                <button id="btnP" class="btn" style="--clr:#6eff3e"><span>paper</span></button>
+                <button id="btnS" class="btn" style="--clr:#ff1867"><span>scissors</span></button>
+            </div>
+            <div class="computerContainer">
+                <p>computer</p>
+                <div class="images2">
+                    <img id="rockImg2" src="images/rock.png" alt="rock">
+                    <img id="paperImg2" src="images/paper.png" alt="rock">
+                    <img id="scissorImg2" src="images/scissors.png" alt="rock">
+                </div>
+            </div>
+            
         </div>
-        <div class="images2">
-            <img src="images/rock.png" alt="rock">
-            <img src="images/paper.png" alt="rock">
-            <img src="images/scissors.png" alt="rock">
+        <div class="footer">
+            <p>player turn</p>
         </div>
     </div>
     <script src="script.js"></script>

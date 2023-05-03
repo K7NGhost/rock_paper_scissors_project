@@ -22,11 +22,14 @@ const playerScore = document.getElementById('playerScore');
 const computerScore = document.getElementById('computerScore');
 const scoreChecker = document.getElementById('scoreChecker');
 
+const popup = document.getElementById('popup');
+
 
 
 
 rockBtn.addEventListener('click', () => {
    playRock();
+   popup.classList.add('active');
 })
 
 
@@ -149,6 +152,7 @@ function playRound(playerChoice, computerChoice) {
    if(computerChoice === 'scissors' & playerChoice === 'scissors') {
        return scoreChecker.innerHTML = 'Draw! Scissors and scissors';
    }
+
   
 }
 

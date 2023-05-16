@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>rock_paper_scissors</title>
-   <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rock_paper_scissors</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 <body>
-   <div class="mainContainer">
-       <div class="header">
-           <header>rock, paper, scissors</header>
-       </div>
-       <div class="midContainer">
-           <div class="playerContainer">
-               <p>Player</p>
-               <div class="images1">
-                   <img id="rockImg" src="images/rock.png" alt="rock">
-                   <img id="paperImg" src="images/paper.png" alt="paper">
-                   <img id="scissorImg" src="images/scissors.png" alt="scissors">
-               </div>
-           </div>
-           <div id="btns">
-               <button id="btnR" class="btn" style="--clr:#1e9bff"><span>rock</span></button>
-               <button id="btnP" class="btn" style="--clr:#6eff3e"><span>paper</span></button>
-               <button id="btnS" class="btn" style="--clr:#ff1867"><span>scissors</span></button>
-           </div>
-           <div class="computerContainer">
-               <p>computer</p>
-               <div class="images2">
-                   <img id="rockImg2" src="images/rock.png" alt="rock">
-                   <img id="paperImg2" src="images/paper.png" alt="rock">
-                   <img id="scissorImg2" src="images/scissors.png" alt="rock">
-               </div>
-           </div>
-          
-       </div>
-       <div class="footer">
-           <p id="playerScore">player score = 0</p>
-           <p id="computerScore">computer score = 0</p>
-           <p id="scoreChecker">You win!</p>
-       </div>
-   </div>
-   <div id="popup">
-        <p>dang you lost, try again!</p>
-        <button class="close-button">try again</button>
-   </div>
-   <div id="overlay"></div>
-   <script src="script.js"></script>
+  <div class="mainContainer">
+      <div class="header">
+          <header>rock, paper, scissors</header>
+      </div>
+      <div class="description">first to five wins the game and get nothing!</div>
+      <div class="midContainer">
+          <div class="playerContainer">
+              <p class="playerSide" style="--clr:#fc8803">Player</p>
+              <div class="images1">
+                  <img id="rockImg" src="images/rock.png" alt="rock">
+                  <img id="paperImg" src="images/paper.png" alt="paper">
+                  <img id="scissorImg" src="images/scissors.png" alt="scissors">
+              </div>
+          </div>
+          <div id="btns">
+              <button id="btnR" class="btn" style="--clr:#1e9bff"><span>rock</span></button>
+              <button id="btnP" class="btn" style="--clr:#6eff3e"><span>paper</span></button>
+              <button id="btnS" class="btn" style="--clr:#ff1867"><span>scissors</span></button>
+          </div>
+          <div class="computerContainer">
+              <p class="computerSide" style="--clr:#fc0398">computer</p>
+              <div class="images2">
+                  <img id="rockImg2" src="images/rock.png" alt="rock">
+                  <img id="paperImg2" src="images/paper.png" alt="paper">
+                  <img id="scissorImg2" src="images/scissors.png" alt="scissor">
+              </div>
+          </div>
+        
+      </div>
+      <div class="footer">
+          <p id="playerScore">player score = 0</p>
+          <p id="computerScore">computer score = 0</p>
+          <p id="scoreChecker"></p>
+      </div>
+  </div>
+  <div id="popup">
+       <p id="popupMessage">dang you lost, try again!</p>
+       <button id="tryAgain-button">try again</button>
+  </div>
+  <div id="overlay"></div>
+  <script src="script.js"></script>
 </body>
 </html>
